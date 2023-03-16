@@ -126,7 +126,7 @@ namespace RestCsharp.Presentacion.AsistenteInstalacion
             this.Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel8.Location = new System.Drawing.Point(0, 0);
             this.Panel8.Name = "Panel8";
-            this.Panel8.Size = new System.Drawing.Size(1370, 86);
+            this.Panel8.Size = new System.Drawing.Size(1364, 86);
             this.Panel8.TabIndex = 592;
             // 
             // PictureBox7
@@ -144,7 +144,7 @@ namespace RestCsharp.Presentacion.AsistenteInstalacion
             this.lblwindows.BackColor = System.Drawing.Color.Transparent;
             this.lblwindows.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblwindows.ForeColor = System.Drawing.Color.White;
-            this.lblwindows.Location = new System.Drawing.Point(851, 0);
+            this.lblwindows.Location = new System.Drawing.Point(845, 0);
             this.lblwindows.Name = "lblwindows";
             this.lblwindows.Size = new System.Drawing.Size(519, 86);
             this.lblwindows.TabIndex = 607;
@@ -437,7 +437,7 @@ namespace RestCsharp.Presentacion.AsistenteInstalacion
             this.lblnombredeservicio.Name = "lblnombredeservicio";
             this.lblnombredeservicio.Size = new System.Drawing.Size(134, 20);
             this.lblnombredeservicio.TabIndex = 621;
-            this.lblnombredeservicio.Text = "SERVIDOR_LOCAL";
+            this.lblnombredeservicio.Text = "SQLPRACTICAS";
             // 
             // lblcontraseña
             // 
@@ -870,7 +870,7 @@ namespace RestCsharp.Presentacion.AsistenteInstalacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1364, 749);
             this.Controls.Add(this.btnModoProgramador);
             this.Controls.Add(this.PanelDios);
             this.Controls.Add(this.Panel2);

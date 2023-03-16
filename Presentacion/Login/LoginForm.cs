@@ -255,6 +255,7 @@ namespace RestCsharp.Presentacion.Login
             DataTable dt = new DataTable();
             DmovimientoCaja funcion = new DmovimientoCaja();
             funcion.MostrarMovimientosCaja(ref dt);
+            
             if (dt.Rows.Count > 0)
             {
                 UsuarioInicioCaja = dt.Rows[0]["Nombre"].ToString();
@@ -271,7 +272,7 @@ namespace RestCsharp.Presentacion.Login
                 if (EstadoAperturaCaja == "Nuevo")
                 {
                     mostrarInicioSesion();
-                    Dispose();
+                    //Dispose();
                    var frm = new AperturaCaja();
                     frm.Dock = DockStyle.Fill;
                     this.Controls.Add(frm);
