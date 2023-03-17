@@ -255,7 +255,6 @@ namespace RestCsharp.Presentacion.Login
             DataTable dt = new DataTable();
             DmovimientoCaja funcion = new DmovimientoCaja();
             funcion.MostrarMovimientosCaja(ref dt);
-            
             if (dt.Rows.Count > 0)
             {
                 UsuarioInicioCaja = dt.Rows[0]["Nombre"].ToString();

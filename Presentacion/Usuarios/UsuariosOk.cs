@@ -168,6 +168,11 @@ namespace RestCsharp.Presentacion.Usuarios
                 insertarPermisos();
 
             }
+            else
+            {
+                mostrarUsuarios();
+                panelregistro.Visible = false;
+            }
         }
         private void Validaciones()
         {

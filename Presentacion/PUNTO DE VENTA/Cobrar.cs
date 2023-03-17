@@ -92,7 +92,7 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
                             TXTVUELTO.Text = Convert.ToString(vuelto);
                             restante = efectivo - (total + tarjeta + efectivo_calculado);
                             txtrestante.Text = Convert.ToString(restante);
-                            txtrestante.Text = decimal.Parse(txtrestante.Text).ToString("##0.00");
+                            txtrestante.Text = decimal.Parse(txtrestante.Text).ToString("##.00");
                         }
 
                     }
@@ -103,7 +103,7 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
                         efectivo_calculado = efectivo;
                         restante = total - efectivo_calculado - tarjeta;
                         txtrestante.Text = Convert.ToString(restante);
-                        txtrestante.Text = decimal.Parse(txtrestante.Text).ToString("##0.00");
+                        txtrestante.Text = decimal.Parse(txtrestante.Text).ToString("##.00");
                     }
                 }
                 catch (Exception ex)

@@ -70,9 +70,9 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
             this.panelPrincipal.Controls.Add(this.panel1);
             this.panelPrincipal.Controls.Add(this.btncerrar);
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.panelPrincipal.Location = new System.Drawing.Point(5, 5);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(786, 402);
+            this.panelPrincipal.Size = new System.Drawing.Size(776, 392);
             this.panelPrincipal.TabIndex = 623;
             // 
             // panelReport
@@ -377,10 +377,12 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(786, 402);
             this.Controls.Add(this.panelPrincipal);
             this.Name = "Cobrar";
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cobrar";
             this.Load += new System.EventHandler(this.Cobrar_Load);

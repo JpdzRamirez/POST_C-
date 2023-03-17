@@ -422,7 +422,7 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
         {
             panelContCobro = new Panel();
             panelContCobro.Size = new Size(883, 402);
-            panelContCobro.Location = new Point((Width - panelContCobro.Width) / 2, (Height - panelContCobro.Height) / 2);
+            panelContCobro.Location = new Point(((Width - panelContCobro.Width) / 2)-300, ((Height - panelContCobro.Height) / 2)-200);
             panelContCobro.Controls.Add(panelCobro);
             panelContCobro.Visible = false;
             panelCobro.Visible = false;
@@ -1550,7 +1550,7 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
                 string[] a = totalpagar.ToString().Split('.');
                 string txttotaldecimal;
                 txttotaldecimal = a[1];
-                Totalletras = totalString + " CON " + txttotaldecimal + "/100 ";
+                Totalletras = totalString ;
             }
             catch (Exception ex)
             {
@@ -1641,10 +1641,10 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
                 parametrosVentas.EmpresaRUCcliente = dataventas["NroDoc"].ToString();
                 parametrosVentas.EmpresaRazonsocialCliente = dataventas["Nombre"].ToString();
                 parametrosVentas.DireccionCliente = dataventas["Direccion"].ToString();
-                parametrosVentas.TotalIgv = Convert.ToDecimal(dataventas["TotalIgv"]);
+                parametrosVentas.TotalIgv = Convert.ToDecimal(dataventas["TotalIVA"]);
                 parametrosVentas.TotSubtotal = Convert.ToDecimal(dataventas["TotSubtotal"]);
                 parametrosVentas.Monto_total = Convert.ToDecimal(dataventas["Monto_total"]);
-                parametrosVentas.Porcentaje_IGV = Convert.ToDecimal(dataventas["Porcentaje_IGV"]);
+                parametrosVentas.Porcentaje_IGV = Convert.ToDecimal(dataventas["Porcentaje_IVA"]);
 
             }
             var funciondeDv = new Ddetalleventas();
@@ -2192,13 +2192,13 @@ namespace RestCsharp.Presentacion.PUNTO_DE_VENTA
             }
             else if (Comprobante == "FACTURA" && idcliente != 0)
             {
-                if (Tipocliente == "RUC")
+                if (Tipocliente == "C.C" || Tipocliente == "NIT")
                 {
                     procesarVenta();
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese cliente con RUC");
+                    MessageBox.Show("Ingrese cliente con C.C O NIT");
                 }
 
             }

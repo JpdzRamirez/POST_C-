@@ -167,15 +167,20 @@ namespace RestCsharp.Datos
                 cmd.Parameters.AddWithValue("@Estado", "ACTIVO");
                 cmd.ExecuteNonQuery();
                 return true;
+              
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+               
                 return false;
+
             }
             finally
             {
+
                 CONEXIONMAESTRA.cerrar();
+
             }
 
         }

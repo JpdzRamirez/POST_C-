@@ -316,7 +316,7 @@ namespace RestCsharp.Presentacion.Empresaconfig
             this.txtimpuesto.Name = "txtimpuesto";
             this.txtimpuesto.Size = new System.Drawing.Size(64, 28);
             this.txtimpuesto.TabIndex = 553;
-            this.txtimpuesto.Text = "IGV";
+            this.txtimpuesto.Text = "IVA";
             // 
             // Label14
             // 
@@ -343,7 +343,7 @@ namespace RestCsharp.Presentacion.Empresaconfig
             this.txtporcentaje.Name = "txtporcentaje";
             this.txtporcentaje.Size = new System.Drawing.Size(64, 28);
             this.txtporcentaje.TabIndex = 553;
-            this.txtporcentaje.Text = "18";
+            this.txtporcentaje.Text = "19";
             // 
             // Label16
             // 
@@ -575,9 +575,9 @@ namespace RestCsharp.Presentacion.Empresaconfig
             this.checConectarsunat.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checConectarsunat.Location = new System.Drawing.Point(728, 18);
             this.checConectarsunat.Name = "checConectarsunat";
-            this.checConectarsunat.Size = new System.Drawing.Size(180, 24);
+            this.checConectarsunat.Size = new System.Drawing.Size(164, 24);
             this.checConectarsunat.TabIndex = 617;
-            this.checConectarsunat.Text = "Conectar a SUNAT";
+            this.checConectarsunat.Text = "Conectar a DIAN";
             this.checConectarsunat.UseVisualStyleBackColor = true;
             this.checConectarsunat.CheckedChanged += new System.EventHandler(this.checConectarsunat_CheckedChanged);
             // 

@@ -53,11 +53,11 @@ namespace RestCsharp.Presentacion.Ventas
         {
             if (Rdni.Checked == true)
             {
-                tipoDoc = "DNI";
+                tipoDoc = "C.C";
             }
             if (RRuc.Checked == true)
             {
-                tipoDoc = "RUC";
+                tipoDoc = "NIT";
             }
         }
         private void insertar()

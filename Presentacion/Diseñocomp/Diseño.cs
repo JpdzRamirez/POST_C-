@@ -60,7 +60,7 @@ namespace RestCsharp.Presentacion.Diseñocomp
             {
                 btnTicket.BackColor = Color.FromArgb(255, 204, 1);
                 btnFacturaBoleta.BackColor = Color.WhiteSmoke;
-                txtAutorizacion_fiscal.Visible = false;
+                txtAutorizacion_fiscal.Visible = true;
                 txtAutorizacion_fiscal.Text = "-";
             }
             else

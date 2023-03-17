@@ -653,7 +653,6 @@
             // 
             // Panel_grupos
             // 
-            this.Panel_grupos.AutoScroll = true;
             this.Panel_grupos.Controls.Add(this.panelCobro);
             this.Panel_grupos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_grupos.Location = new System.Drawing.Point(0, 42);
@@ -694,7 +693,7 @@
             this.dgClientes.ColumnHeadersVisible = false;
             this.dgClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgClientes.EnableHeadersVisualStyles = false;
-            this.dgClientes.Location = new System.Drawing.Point(524, 289);
+            this.dgClientes.Location = new System.Drawing.Point(538, 316);
             this.dgClientes.MultiSelect = false;
             this.dgClientes.Name = "dgClientes";
             this.dgClientes.ReadOnly = true;
@@ -1945,7 +1944,7 @@
             this.lblImpuesto1.Name = "lblImpuesto1";
             this.lblImpuesto1.Size = new System.Drawing.Size(115, 26);
             this.lblImpuesto1.TabIndex = 507;
-            this.lblImpuesto1.Text = "IGV (18%):";
+            this.lblImpuesto1.Text = "IVA (19%):";
             this.lblImpuesto1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Panel11

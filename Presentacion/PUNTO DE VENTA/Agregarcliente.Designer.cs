@@ -101,10 +101,10 @@ namespace RestCsharp.Presentacion.Ventas
             this.RRuc.AutoSize = true;
             this.RRuc.Location = new System.Drawing.Point(204, 173);
             this.RRuc.Name = "RRuc";
-            this.RRuc.Size = new System.Drawing.Size(62, 24);
+            this.RRuc.Size = new System.Drawing.Size(52, 24);
             this.RRuc.TabIndex = 627;
             this.RRuc.TabStop = true;
-            this.RRuc.Text = "RUC";
+            this.RRuc.Text = "NIT";
             this.RRuc.UseVisualStyleBackColor = true;
             // 
             // Rdni
@@ -113,10 +113,10 @@ namespace RestCsharp.Presentacion.Ventas
             this.Rdni.Checked = true;
             this.Rdni.Location = new System.Drawing.Point(132, 173);
             this.Rdni.Name = "Rdni";
-            this.Rdni.Size = new System.Drawing.Size(55, 24);
+            this.Rdni.Size = new System.Drawing.Size(53, 24);
             this.Rdni.TabIndex = 626;
             this.Rdni.TabStop = true;
-            this.Rdni.Text = "DNI";
+            this.Rdni.Text = "C.C";
             this.Rdni.UseVisualStyleBackColor = true;
             // 
             // btncerrar

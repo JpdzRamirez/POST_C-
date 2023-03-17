@@ -597,7 +597,7 @@
             this.lblempresa.Name = "lblempresa";
             this.lblempresa.Size = new System.Drawing.Size(397, 65);
             this.lblempresa.TabIndex = 0;
-            this.lblempresa.Text = "-";
+            this.lblempresa.Text = "VAHAMAS";
             this.lblempresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
@@ -663,15 +663,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1264, 749);
             this.Controls.Add(this.PanelContraseña);
             this.Controls.Add(this.PanelVisorDeUsuarios);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.PanelVisorDeUsuarios.ResumeLayout(false);
             this.PanelUsuarios.ResumeLayout(false);
