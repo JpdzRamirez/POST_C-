@@ -22,6 +22,7 @@ namespace RestCsharp.Presentacion.Login
         public LoginForm()
         {
             InitializeComponent();
+            btnpais.Text = "LOGGING";
         }
         string login;
         int idusuario;
@@ -70,7 +71,7 @@ namespace RestCsharp.Presentacion.Login
             var dt = new DataTable();
             funcion.mostrar_empresa(ref dt);
             lblempresa.Text = dt.Rows[0][15].ToString();
-            btnpais.Text = dt.Rows[0][14].ToString();
+            //btnpais.Text = dt.Rows[0][14].ToString();
         }
         private void PasarAeleccionServidor()
         {
@@ -340,7 +341,7 @@ namespace RestCsharp.Presentacion.Login
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Contraseña erronea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+            txtcontraseña.Clear();
         }
 
         private void btn1_Click(object sender, EventArgs e)
