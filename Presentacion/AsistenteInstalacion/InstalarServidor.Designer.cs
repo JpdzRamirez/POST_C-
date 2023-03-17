@@ -437,7 +437,7 @@ namespace RestCsharp.Presentacion.AsistenteInstalacion
             this.lblnombredeservicio.Name = "lblnombredeservicio";
             this.lblnombredeservicio.Size = new System.Drawing.Size(134, 20);
             this.lblnombredeservicio.TabIndex = 621;
-            this.lblnombredeservicio.Text = "SQLPRACTICAS";
+            this.lblnombredeservicio.Text = "SERVIDOR_LOCAL";
             // 
             // lblcontraseña
             // 

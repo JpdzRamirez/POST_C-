@@ -24,7 +24,7 @@ namespace RestCsharp.Presentacion.Diseñocomp
             btnTicket.BackColor = Color.FromArgb(255, 204, 1);
             btnFacturaBoleta.BackColor = Color.WhiteSmoke;
             txtAutorizacion_fiscal.Visible = false;
-            txtAutorizacion_fiscal.Text = "-";
+            txtAutorizacion_fiscal.Text = "NIT 1098797436";
 
         }
 
@@ -61,7 +61,7 @@ namespace RestCsharp.Presentacion.Diseñocomp
                 btnTicket.BackColor = Color.FromArgb(255, 204, 1);
                 btnFacturaBoleta.BackColor = Color.WhiteSmoke;
                 txtAutorizacion_fiscal.Visible = true;
-                txtAutorizacion_fiscal.Text = "-";
+               // txtAutorizacion_fiscal.Text = "-";
             }
             else
             {
@@ -88,7 +88,7 @@ namespace RestCsharp.Presentacion.Diseñocomp
             parametros.Anuncio = TXTANUNCIO.Text;
             if (tipo == "Ticket No Fiscal")
             {
-                parametros.Datos_fiscales_de_autorizacion = "-";
+                parametros.Datos_fiscales_de_autorizacion = "NIT 1098797436";
 
             }
             else

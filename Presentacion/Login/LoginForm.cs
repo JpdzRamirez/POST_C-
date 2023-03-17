@@ -172,7 +172,7 @@ namespace RestCsharp.Presentacion.Login
 
         private void txtcontraseña_TextChanged(object sender, EventArgs e)
         {
-            validarUsuarios();
+            //validarUsuarios();
         }
         private void validarUsuarios()
         {
@@ -340,8 +340,18 @@ namespace RestCsharp.Presentacion.Login
         }
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Contraseña erronea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            txtcontraseña.Clear();
+         
+                if (txtcontraseña.Text!="")
+            {
+                validarUsuarios();
+            }
+            else
+            {
+              
+                MessageBox.Show("Contraseña erronea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+            
         }
 
         private void btn1_Click(object sender, EventArgs e)
