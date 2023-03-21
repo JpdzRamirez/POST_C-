@@ -39,7 +39,12 @@ namespace RestCsharp.Presentacion.Licencia
 
         private void btnCopiar_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtSerial.Text);
+            string temp="";
+            temp = temp + Bases.Encriptar("PVB300Z2RKL8JF");
+            temp = temp + Bases.Encriptar("31-12-2030");
+            temp = temp + Bases.Encriptar("PENDIENTE");
+            temp = temp + Bases.Encriptar("JPDZsoftware");
+            Clipboard.SetText(temp);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

@@ -119,7 +119,7 @@ namespace RestCsharp.Presentacion.Usuarios
                             rowModulos.Cells[0].ReadOnly = true;
                         }
                     }
-                    if (cbxRol.Text == "Mozo")
+                    if (cbxRol.Text == "Mesero")
                     {
                         if (modulo == "Para llevar" || modulo == "Ver cuentas" || modulo == "Cocina" || modulo == "Cambio de mesa")
                         {

@@ -214,9 +214,6 @@ C:\Software TI\Administración de dispositivos SYSCOM\CURSO ANGULAR\TIENDA 2.0\R
 C:\Software TI\Administración de dispositivos SYSCOM\CURSO ANGULAR\TIENDA 2.0\RestCsharp-main\RestCsharp-main\obj\Debug\RestCsharp.csproj.CopyComplete
 C:\Software TI\Administración de dispositivos SYSCOM\CURSO ANGULAR\TIENDA 2.0\RestCsharp-main\RestCsharp-main\obj\Debug\Bumam.exe
 C:\Software TI\Administración de dispositivos SYSCOM\CURSO ANGULAR\TIENDA 2.0\RestCsharp-main\RestCsharp-main\obj\Debug\Bumam.pdb
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\Bumam.exe.config
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\Bumam.exe
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\Bumam.pdb
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\Ionic.Zip.dll
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\System.IO.Compression.ZipFile.dll
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\UIDC.dll
@@ -285,8 +282,11 @@ C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\RestCsharp.Sun
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\Ada369Csharp.Presentacion.SunatForms.Snotascredito.resources
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\Ada369Csharp.Presentacion.SunatForms.Snotasdebito.resources
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\RestCsharp.csproj.GenerateResource.cache
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\Bumam.exe.licenses
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\RestCsharp.csproj.CoreCompileInputs.cache
 C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\RestCsharp.csproj.CopyComplete
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\Bumam.exe
-C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\Bumam.pdb
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\JPDZramirez.exe.config
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\JPDZramirez.exe
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\bin\Debug\JPDZramirez.pdb
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\JPDZramirez.exe.licenses
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\JPDZramirez.exe
+C:\Proyecto_Angular\Subproyectos\Proyecto STORE\POST_C-\obj\Debug\JPDZramirez.pdb

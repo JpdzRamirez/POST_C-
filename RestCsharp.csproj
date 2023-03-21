@@ -7,7 +7,7 @@
     <ProjectGuid>{BEF95173-6B36-4441-9ABB-4D2C301F6987}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>RestCsharp</RootNamespace>
-    <AssemblyName>Bumam</AssemblyName>
+    <AssemblyName>JPDZramirez</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,10 +35,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>iconobuman.ico</ApplicationIcon>
+    <ApplicationIcon>desarrollo-web.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationManifest>bumam.manifest</ApplicationManifest>
+    <ApplicationManifest>JPDZ.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
@@ -698,7 +698,7 @@
       <DependentUpon>Snotasdebito.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="bumam.manifest" />
+    <None Include="JPDZ.manifest" />
     <None Include="Connected Services\servicioFacturacion2021\billService.wsdl" />
     <None Include="Connected Services\servicioFacturacion2021\billService.xsd">
       <SubType>Designer</SubType>
@@ -952,6 +952,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="desarrollo-web.ico" />
     <Content Include="iconobuman.ico" />
     <None Include="Resources\buscar1.png" />
     <None Include="Resources\enlace.png" />

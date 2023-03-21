@@ -47,7 +47,7 @@ namespace RestCsharp.Datos
                     SerialPcLicencia = rdr["S"].ToString();
                 }
 
-                if (estado == "VENCIDA")
+                if (estado == "?VENCIDA?")
                 {
                     return false;
                 }
@@ -63,7 +63,7 @@ namespace RestCsharp.Datos
                             {
                                 if (estado == "?ACTIVO?")
                                 {
-                                    Resultado = "Licencia de prueba activa hasta el " + fechaFinal.ToString("dd/MM/yyyy");
+                                    Resultado = "Licencia DEMO activa hasta el " + fechaFinal.ToString("dd/MM/yyyy");
                                 }
                                 else if (estado == "?ACTIVADO PRO?")
                                 {
@@ -99,7 +99,7 @@ namespace RestCsharp.Datos
                 string estado;
                 Bases.Obtener_serialPC(ref SerialPC);
                 DateTime fechaactualdate = DateTime.Now;
-                DateTime fechaFinaldate = fechaactualdate.AddDays(2500);
+                DateTime fechaFinaldate = fechaactualdate.AddDays(30);
                 //Encriptar
                 fechafinal = Bases.Encriptar(fechaFinaldate.ToString("yyyy-MM-dd"));
                 fechaactual = Bases.Encriptar(fechaactualdate.ToString("yyyy-MM-dd"));
@@ -125,13 +125,25 @@ namespace RestCsharp.Datos
                 CONEXIONMAESTRA.cerrar();
             }
         }
+
+        public string GetXMLAsString(XmlDocument myxml)
+        {
+
+            StringWriter sw = new StringWriter();
+            XmlTextWriter tx = new XmlTextWriter(sw);
+            myxml.WriteTo(tx);
+
+            string str = sw.ToString();// 
+            return str;
+        }
         public bool ActivarLicencia()
         {
+            
             try
             {
                 OpenFileDialog dlg = new OpenFileDialog();
-                dlg.Filter = "Licencias Bumam|*.xml";
-                dlg.Title = "Cargador de Licencias Bumam";
+                dlg.Filter = "Licencias JPDZ|*.xml";
+                dlg.Title = "Cargador de Licencias JPDZramirez";
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     //Descifrar Licencia
@@ -140,19 +152,32 @@ namespace RestCsharp.Datos
                     XmlDocument doc = new XmlDocument();
                     doc.Load(ruta);
                     XmlElement root = doc.DocumentElement;
-                    dbcnString = root.Attributes.Item(0).Value;
-                    LicenciaDescifrada = (aes.Decrypt(dbcnString, Desencryptacion.appPwdUnique, int.Parse("256")));
-                    string cadena = LicenciaDescifrada;
+                    foreach (XmlNode xmlNode in root.ChildNodes)
+                    {             
+                        dbcnString = dbcnString + xmlNode.Attributes["serial"].Value + "|";      
+                        // CADENA PARA EXTRAER TEXTO DEL XML
+                        /*foreach (XmlNode xmlNodeItem in xmlNode.FirstChild.ChildNodes)
+                        {
+                            dbcnString=dbcnString+ xmlNodeItem.InnerText+ '|';
+                            dbcnString=dbcnString+ xmlNodeItem.InnerXml+ '|';
+                            dbcnString=dbcnString+ xmlNodeItem.OuterXml+ '|';
+                        }*/
+                    }           
+                    //LicenciaDescifrada = (aes.Decrypt(dbcnString, "", int.Parse("256")));
+                    
+                    string cadena = dbcnString;
                     string[] separadas = cadena.Split('|');
-                    SerialPcLicencia = separadas[1];
-                    FechaFinLicencia = separadas[2];
-                    EstadoLicencia = separadas[3];
-                    NombreSoftwareLicencia = separadas[4];
-                    if (NombreSoftwareLicencia == "Bumam")
+
+                    SerialPcLicencia = Bases.Desencriptar(separadas[0]);
+                    FechaFinLicencia = Bases.Desencriptar(separadas[1]);
+                    EstadoLicencia = Bases.Desencriptar(separadas[2]);
+                    NombreSoftwareLicencia = Bases.Desencriptar(separadas[3]);
+
+                    if (NombreSoftwareLicencia == "JPDZsoftware")
                     {
                         if (EstadoLicencia == "PENDIENTE")
                         {
-                            if (SerialPcLicencia == SerialPC)
+                            if (SerialPcLicencia == Bases.Desencriptar(SerialPC))
                             {
                                 string fechaFin = Bases.Encriptar(FechaFinLicencia);
                                 string estado = Bases.Encriptar("?ACTIVADO PRO?");

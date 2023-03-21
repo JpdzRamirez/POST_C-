@@ -10,7 +10,7 @@ namespace RestCsharp.Logica
         static private AES aes = new AES();
         static public string CnString;
         static string dbcnString;
-        static public string appPwdUnique = "RESTAURAnTE.codigo369.BUMAM.Hola_Mundo";
+        static public string appPwdUnique = "JPDZramirez.AC1703971207952RTY42";
 
 
         public static object checkServer()

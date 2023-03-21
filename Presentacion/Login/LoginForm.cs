@@ -348,7 +348,7 @@ namespace RestCsharp.Presentacion.Login
             else
             {
               
-                MessageBox.Show("Contraseña erronea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingresa contraseña", "Campo Vacio", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             

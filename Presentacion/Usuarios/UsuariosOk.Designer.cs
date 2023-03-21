@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnagregar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -77,7 +78,6 @@
             this.dlg = new System.Windows.Forms.OpenFileDialog();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnsalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,6 +124,24 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1259, 70);
             this.panel4.TabIndex = 6;
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.BackgroundImage = global::RestCsharp.Properties.Resources.naranja;
+            this.btnsalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
+            this.btnsalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnsalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalir.ForeColor = System.Drawing.Color.White;
+            this.btnsalir.Location = new System.Drawing.Point(472, 12);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(112, 46);
+            this.btnsalir.TabIndex = 6;
+            this.btnsalir.Text = "Volver";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // txtbuscar
             // 
@@ -515,7 +533,7 @@
             this.cbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxRol.FormattingEnabled = true;
             this.cbxRol.Items.AddRange(new object[] {
-            "Mozo",
+            "Mesero",
             "Cajero",
             "Administrador"});
             this.cbxRol.Location = new System.Drawing.Point(170, 181);
@@ -670,24 +688,6 @@
             this.dataGridViewImageColumn2.Image = global::RestCsharp.Properties.Resources.editar;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            // 
-            // btnsalir
-            // 
-            this.btnsalir.BackgroundImage = global::RestCsharp.Properties.Resources.naranja;
-            this.btnsalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnsalir.FlatAppearance.BorderSize = 0;
-            this.btnsalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnsalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(472, 12);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(112, 46);
-            this.btnsalir.TabIndex = 6;
-            this.btnsalir.Text = "Volver";
-            this.btnsalir.UseVisualStyleBackColor = true;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // UsuariosOk
             // 

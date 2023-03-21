@@ -81,16 +81,16 @@ namespace RestCsharp.Presentacion.Licencia
             // 
             // btnActivacioManual
             // 
-            this.btnActivacioManual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnActivacioManual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnActivacioManual.FlatAppearance.BorderSize = 0;
             this.btnActivacioManual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivacioManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnActivacioManual.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnActivacioManual.Location = new System.Drawing.Point(163, 277);
+            this.btnActivacioManual.Location = new System.Drawing.Point(306, 277);
             this.btnActivacioManual.Name = "btnActivacioManual";
             this.btnActivacioManual.Size = new System.Drawing.Size(281, 39);
             this.btnActivacioManual.TabIndex = 631;
-            this.btnActivacioManual.Text = "Activar Licencia Manualmente";
+            this.btnActivacioManual.Text = "Activar Licencia con Archivo";
             this.btnActivacioManual.UseVisualStyleBackColor = false;
             this.btnActivacioManual.Click += new System.EventHandler(this.btnActivacioManual_Click);
             // 
@@ -101,7 +101,7 @@ namespace RestCsharp.Presentacion.Licencia
             this.btncomprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncomprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btncomprar.ForeColor = System.Drawing.Color.White;
-            this.btncomprar.Location = new System.Drawing.Point(8, 277);
+            this.btncomprar.Location = new System.Drawing.Point(106, 277);
             this.btncomprar.Name = "btncomprar";
             this.btncomprar.Size = new System.Drawing.Size(149, 39);
             this.btncomprar.TabIndex = 629;
@@ -115,7 +115,7 @@ namespace RestCsharp.Presentacion.Licencia
             this.btnCopiar.Name = "btnCopiar";
             this.btnCopiar.Size = new System.Drawing.Size(90, 28);
             this.btnCopiar.TabIndex = 628;
-            this.btnCopiar.Text = "Copiar";
+            this.btnCopiar.Text = "Activar Serial";
             this.btnCopiar.UseVisualStyleBackColor = true;
             this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
             // 
@@ -133,11 +133,11 @@ namespace RestCsharp.Presentacion.Licencia
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Label4.Location = new System.Drawing.Point(23, 232);
+            this.Label4.Location = new System.Drawing.Point(79, 234);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(134, 20);
+            this.Label4.Size = new System.Drawing.Size(49, 20);
             this.Label4.TabIndex = 620;
-            this.Label4.Text = "Notas del pedido*";
+            this.Label4.Text = "Serial";
             // 
             // txtSerial
             // 
@@ -156,11 +156,11 @@ namespace RestCsharp.Presentacion.Licencia
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(4, 189);
+            this.Label2.Location = new System.Drawing.Point(177, 186);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(668, 24);
+            this.Label2.Size = new System.Drawing.Size(294, 24);
             this.Label2.TabIndex = 612;
-            this.Label2.Text = "Usa este dato cuando se te pida en tu Compra (es muy IMPORTANTE)";
+            this.Label2.Text = "Ingrese el Serial de Activación";
             // 
             // Label1
             // 
